@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "glorys-antarctic-correction"
+version = "1.0.0"
+description = "Adaptive thermodynamic correction of GLORYS12V1 profiles against CTD casts (Marguerite Bay, Antarctic Peninsula)"
+readme = "README.md"
+requires-python = ">=3.10"
+# TODO: add license = "<SPDX id>" and license-files = ["LICENSE"] once decided
+authors = [
+    { name = "Enrique Morales-Acuña" },
+    { name = "Gabriel Gutiérrez-Cardenas" },
+]
+keywords = ["GLORYS", "reanalysis", "bias correction", "CTD", "TEOS-10", "Antarctica"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.13",          # Akima1DInterpolator(method="makima")
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "gsw>=3.6",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "xarray>=2023.1"]
+# regenerating the GLORYS station profiles with scripts/extract_glorys.py
+extract = ["xarray>=2023.1", "netCDF4>=1.6"]
+
+[project.urls]
+Repository = "https://github.com/Gabo2000s/glorys-antarctic-correction"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/glorys_correction"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

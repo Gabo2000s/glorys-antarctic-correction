@@ -1,0 +1,38 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  python:
+    name: Python ${{ matrix.python }} / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install
+        run: python -m pip install -e "python[test]"
+
+      - name: Run tests
+        run: python -m pytest python -v
+
+      - name: Run the correction and compare with results/
+        run: |
+          python -m glorys_correction --out "${{ runner.temp }}/run"
+          python scripts/compare_implementations.py "${{ runner.temp }}/run" results
+
+      # Checks the raw files against data/SHA256SUMS.txt on a fresh checkout
+      # (catches line-ending conversion) and builds the Zenodo data package.
+      - name: Verify data and build data package
+        run: python scripts/build_data_package.py --out "${{ runner.temp }}/zenodo-data"

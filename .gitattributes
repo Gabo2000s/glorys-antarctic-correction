@@ -1,0 +1,18 @@
+# Text files: normalise to LF in the repository.
+*.m text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+
+# Binary files.
+*.png binary
+
+# Exception (must come last: the last matching rule wins).
+# Keep the input data byte-for-byte identical on every checkout: their
+# checksums are recorded in data/SHA256SUMS.txt and must match the Zenodo
+# record. Without this, core.autocrlf would rewrite their CRLF line endings.
+data/raw/** -text

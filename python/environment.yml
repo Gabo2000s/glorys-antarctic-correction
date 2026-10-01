@@ -1,0 +1,15 @@
+name: glorys-correction
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy>=1.24
+  - scipy>=1.13
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - gsw>=3.6
+  - pytest>=7
+  # only for scripts/extract_glorys.py (regenerating the GLORYS inputs)
+  - xarray>=2023.1
+  - netcdf4>=1.6
+  - pip

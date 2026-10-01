@@ -1,0 +1,23 @@
+S1  NF003_008  Station-01
+  Temperature (degC)  bias   0.077 ->   0.165  RMSE  0.526 ->  0.277  r  0.822 ->  0.968
+  Salinity (g/kg)     bias  -0.803 ->   0.141  RMSE  1.175 ->  0.210  r  0.921 ->  0.911
+
+S2  NF003_009  Station-02
+  Temperature (degC)  bias   1.061 ->   0.171  RMSE  1.206 ->  0.546  r  0.769 ->  0.832
+  Salinity (g/kg)     bias  -0.448 ->   0.161  RMSE  0.845 ->  0.223  r  0.881 ->  0.944
+
+S3  NF003_010  Station-03
+  Temperature (degC)  bias   0.471 ->   0.053  RMSE  0.716 ->  0.339  r  0.780 ->  0.893
+  Salinity (g/kg)     bias  -0.757 ->   0.163  RMSE  1.112 ->  0.246  r  0.843 ->  0.838
+
+S4  NF003_012  Station-04
+  Temperature (degC)  bias   0.687 ->  -0.053  RMSE  0.982 ->  0.345  r  0.730 ->  0.929
+  Salinity (g/kg)     bias  -0.667 ->   0.112  RMSE  1.000 ->  0.182  r  0.965 ->  0.961
+
+S5  NF003_013  Station-05
+  Temperature (degC)  bias   0.789 ->  -0.022  RMSE  1.299 ->  0.552  r  0.426 ->  0.668
+  Salinity (g/kg)     bias  -0.393 ->   0.140  RMSE  0.769 ->  0.204  r  0.905 ->  0.958
+
+S6  NF003_014  Station-06
+  Temperature (degC)  bias   1.179 ->   0.007  RMSE  1.447 ->  0.450  r  0.635 ->  0.814
+  Salinity (g/kg)     bias  -0.456 ->   0.115  RMSE  0.746 ->  0.177  r  0.935 ->  0.962

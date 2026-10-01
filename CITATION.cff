@@ -1,0 +1,63 @@
+# TODO before the first release:
+#   - add "orcid:" for each author (format https://orcid.org/0000-0000-0000-0000)
+#   - add "license:" once the authors decide it
+#   - set date-released to the release date (YYYY-MM-DD)
+#   - after the article is published, add preferred-citation
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the associated article and this
+  software version.
+type: software
+title: >-
+  glorys-antarctic-correction: adaptive thermodynamic correction of GLORYS12V1
+  profiles against CTD casts in Marguerite Bay, Antarctic Peninsula
+version: 1.0.0
+date-released: "2026-10-01"
+repository-code: "https://github.com/Gabo2000s/glorys-antarctic-correction"
+abstract: >-
+  MATLAB and Python implementations of an adaptive thermodynamic correction
+  of GLORYS12V1 temperature and salinity profiles against CTD observations.
+  The correction combines a depth-weighted bias term and a
+  stratification-weighted structural term, with an adjustment in the
+  diffusive-convection regime identified by the Turner angle, using TEOS-10.
+  Both implementations give the same results. Includes six CTD casts from
+  Marguerite Bay, Antarctic Peninsula (December 2025), the corresponding
+  GLORYS12V1 profiles, and the corrected profiles and metrics.
+authors:
+  - family-names: Morales-Acuña
+    given-names: Enrique
+    affiliation: >-
+      Instituto Politécnico Nacional, CIIDIR Sinaloa, Laboratorio de
+      Oceanografía Satelital y Clima (LOSyC), Guasave, Mexico
+  - family-names: Gutiérrez-Cardenas
+    given-names: Gabriel
+    affiliation: >-
+      Centre for Fisheries and Ecosystem Research, Fisheries and Marine
+      Institute of Memorial University, St. John's, NL, Canada
+keywords:
+  - MATLAB
+  - Python
+  - GLORYS12V1
+  - ocean reanalysis
+  - bias correction
+  - CTD
+  - TEOS-10
+  - Turner angle
+  - Marguerite Bay
+  - Antarctic Peninsula
+references:
+  - type: data
+    title: Global Ocean Physics Reanalysis (GLORYS12V1)
+    authors:
+      - name: E.U. Copernicus Marine Service
+    doi: 10.48670/moi-00021
+  - type: article
+    title: The Copernicus Global 1/12° Oceanic and Sea Ice GLORYS12 Reanalysis
+    authors:
+      - family-names: Lellouche
+        given-names: Jean-Michel
+      - name: et al.
+    journal: Frontiers in Earth Science
+    volume: 9
+    year: 2021
+    doi: 10.3389/feart.2021.698876
