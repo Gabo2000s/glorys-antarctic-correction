@@ -8,10 +8,11 @@ version = "1.0.0"
 description = "Adaptive thermodynamic correction of GLORYS12V1 profiles against CTD casts (Marguerite Bay, Antarctic Peninsula)"
 readme = "README.md"
 requires-python = ">=3.10"
-# TODO: add license = "<SPDX id>" and license-files = ["LICENSE"] once decided
+license = "MIT"
 authors = [
     { name = "Enrique Morales-Acuña" },
     { name = "Gabriel Gutiérrez-Cardenas" },
+    { name = "Andrea Manrique-Cantillo" },
 ]
 keywords = ["GLORYS", "reanalysis", "bias correction", "CTD", "TEOS-10", "Antarctica"]
 classifiers = [

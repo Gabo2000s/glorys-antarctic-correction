@@ -19,5 +19,10 @@ with the corrected profiles, is the Zenodo dataset record
 `scripts/build_data_package.py` checks them against `SHA256SUMS.txt` before
 packaging.
 
+Licences: CC BY 4.0 for the CTD casts and the station metadata; the GLORYS12V1
+station profiles are E.U. Copernicus Marine Service Information
+(https://doi.org/10.48670/moi-00021), redistributed under the Copernicus
+Marine Service licence.
+
 Variables, units, provenance, known metadata discrepancies and licences are
 described in [`DATASET_README.md`](DATASET_README.md).

@@ -14,6 +14,9 @@ described in the associated article.
   reanalysis in a coastal Antarctic fjord, TODO journal, TODO DOI.
 - **Software:** glorys-antarctic-correction v1.0.0, TODO software DOI
   (https://github.com/Gabo2000s/glorys-antarctic-correction).
+- **Licence:** CC BY 4.0 for the CTD casts, the station metadata and the
+  corrected profiles; the GLORYS12V1 station profiles are redistributed under
+  the Copernicus Marine Service licence (see "Licence and attribution").
 
 ## Contents
 
@@ -179,17 +182,15 @@ two-decimal rounding.
 
 ## Licence and attribution
 
-TODO (first author): licence of this record (proposed: CC-BY-4.0 for the CTD
-data and corrected profiles).
+| Files | Licence | Attribution |
+|---|---|---|
+| `ctd/`, `stations.csv` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Cite this record |
+| `corrected/` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | Cite this record, and: "Generated using E.U. Copernicus Marine Service Information; https://doi.org/10.48670/moi-00021" |
+| `glorys/` | Copernicus Marine Service licence | "E.U. Copernicus Marine Service Information; https://doi.org/10.48670/moi-00021" |
 
-The GLORYS extracts and the corrected profiles derive from a Copernicus Marine
-Service product and remain subject to the Copernicus Marine Licence Agreement,
-which permits redistribution with acknowledgement:
-
-- `glorys/` (redistributed information): "E.U. Copernicus Marine Service
-  Information; https://doi.org/10.48670/moi-00021".
-- `corrected/` (derived product): "Generated using E.U. Copernicus Marine
-  Service Information; https://doi.org/10.48670/moi-00021".
+The Copernicus Marine Service licence permits redistributing its products and
+distributing products derived from them, with the acknowledgements above.
+The corrected profiles are such a derived product.
 
 Product citation: Global Ocean Physics Reanalysis. E.U. Copernicus Marine
 Service Information (CMEMS). Marine Data Store (MDS).

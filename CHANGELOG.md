@@ -32,3 +32,6 @@ Version used for the results of the associated article.
   `scripts/make_article_figures.py` to draw Figures 2 and 3 of the article.
 - Documentation of the method, the numerical definitions and the output
   formats.
+- Licences: MIT for the code (`LICENSE`); CC BY 4.0 for the CTD casts, the
+  station metadata and the corrected profiles; the GLORYS12V1 station
+  profiles stay under the Copernicus Marine Service licence.

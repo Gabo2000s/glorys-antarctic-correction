@@ -216,7 +216,7 @@ scripts/     extract_glorys.py, compare_implementations.py, build_data_package.p
 
 Please cite the article, and the software version and dataset you used:
 
-- Software: Morales-Acuña, E. and Gutiérrez-Cardenas, G.:
+- Software: Morales-Acuña, E., Gutiérrez-Cardenas, G. and Manrique-Cantillo, A.:
   glorys-antarctic-correction (v1.0.0), Zenodo, TODO software DOI.
 - Data: TODO, Zenodo, TODO dataset DOI.
 
@@ -224,8 +224,17 @@ GitHub's *Cite this repository* button uses [`CITATION.cff`](CITATION.cff).
 
 ## Licence
 
-TODO (to be decided by the authors): licence of the code. Data licences are
-described in [`data/DATASET_README.md`](data/DATASET_README.md).
+- **Code** (`matlab/`, `python/`, `scripts/`): MIT licence, see
+  [`LICENSE`](LICENSE).
+- **Data**: the CTD casts, the station metadata and the corrected profiles
+  are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  The corrected profiles are generated using E.U. Copernicus Marine Service
+  Information (https://doi.org/10.48670/moi-00021).
+- **GLORYS12V1 station profiles** (`data/raw/glorys/`): E.U. Copernicus
+  Marine Service Information (https://doi.org/10.48670/moi-00021),
+  redistributed under the Copernicus Marine Service licence.
+
+Details: [`data/DATASET_README.md`](data/DATASET_README.md).
 
 ## Acknowledgements
 
