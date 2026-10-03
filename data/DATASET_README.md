@@ -10,9 +10,9 @@ described in the associated article.
   Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and
   Dikul, N.: An adaptive thermodynamic correction framework for GLORYS ocean
   reanalysis in a coastal Antarctic fjord, manuscript in preparation.
-- **Software:** glorys-antarctic-correction v1.0.0
-  (https://github.com/Gabo2000s/glorys-antarctic-correction), archived on
-  Zenodo.
+- **Software:** glorys-antarctic-correction v1.0.0,
+  https://doi.org/10.5281/zenodo.23115705
+  (https://github.com/Gabo2000s/glorys-antarctic-correction).
 - **Licence:** CC BY 4.0 for the CTD casts, the station metadata and the
   corrected profiles; the GLORYS12V1 station profiles are redistributed under
   the Copernicus Marine Service licence (see "Licence and attribution").

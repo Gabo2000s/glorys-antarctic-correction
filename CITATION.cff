@@ -8,6 +8,14 @@ title: >-
   profiles against CTD casts in Marguerite Bay, Antarctic Peninsula
 version: 1.0.0
 date-released: "2026-10-02"
+doi: 10.5281/zenodo.23115704
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23115704
+    description: All versions of the software (concept DOI)
+  - type: doi
+    value: 10.5281/zenodo.23115705
+    description: Version 1.0.0
 repository-code: "https://github.com/Gabo2000s/glorys-antarctic-correction"
 license: MIT
 abstract: >-
