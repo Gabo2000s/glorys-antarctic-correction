@@ -10,8 +10,8 @@ western Antarctic Peninsula. The algorithm is provided in **MATLAB** and in
 This repository accompanies the article:
 
 > Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
-> Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and
-> Dikul, N.: An adaptive thermodynamic correction framework for GLORYS ocean
+> Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., Dikul, N.,
+> and Montoya Mejía, M.: An adaptive thermodynamic correction framework for GLORYS ocean
 > reanalysis in a coastal Antarctic fjord, manuscript in preparation, 2026.
 
 ## Why a correction is needed
@@ -220,7 +220,8 @@ Please cite the article, and the software version and dataset you used:
   glorys-antarctic-correction (v1.0.0), Zenodo, https://doi.org/10.5281/zenodo.23115705, 2026.
   All versions: https://doi.org/10.5281/zenodo.23115704.
 - Data: Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
-  Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C. and Dikul, N.:
+  Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., Dikul, N. and
+  Montoya Mejía, M.:
   CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
   Marguerite Bay, Antarctic Peninsula, December 2025 (v1.0.0), Zenodo,
   https://doi.org/10.5281/zenodo.23112579.

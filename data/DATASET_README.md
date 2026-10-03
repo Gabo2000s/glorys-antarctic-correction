@@ -7,8 +7,8 @@ station, and the GLORYS profiles after the adaptive thermodynamic correction
 described in the associated article.
 
 - **Article:** Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
-  Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and
-  Dikul, N.: An adaptive thermodynamic correction framework for GLORYS ocean
+  Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., Dikul, N.,
+  and Montoya Mejía, M.: An adaptive thermodynamic correction framework for GLORYS ocean
   reanalysis in a coastal Antarctic fjord, manuscript in preparation.
 - **Software:** glorys-antarctic-correction v1.0.0,
   https://doi.org/10.5281/zenodo.23115705
@@ -190,8 +190,8 @@ https://doi.org/10.48670/moi-00021 (Accessed on 14 February 2026).
 ## How to cite
 
 Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
-Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and Dikul, N.:
-CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
+Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., Dikul, N., and
+Montoya Mejía, M.: CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
 Marguerite Bay, Antarctic Peninsula, December 2025 (v1.0.0), Zenodo [data set],
 https://doi.org/10.5281/zenodo.23112579, 2026.
 
