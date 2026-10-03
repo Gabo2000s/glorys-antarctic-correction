@@ -3,7 +3,7 @@
 All notable changes to this project are documented here. Versions follow
 [Semantic Versioning](https://semver.org/).
 
-## [1.0.0] – unreleased
+## [1.0.0] – 2026-10-02
 
 Version used for the results of the associated article.
 

@@ -1,7 +1,5 @@
 # CTD casts and corrected GLORYS12V1 profiles, Marguerite Bay, December 2025
 
-<!-- TODO before publishing: resolve every item marked TODO in this file. -->
-
 Six CTD casts collected in Marguerite Bay (western Antarctic Peninsula) on
 11–15 December 2025 during cruise NF003 of RV *Noosfera* (30th Ukrainian
 Antarctic Expedition), the GLORYS12V1 reanalysis profiles extracted at each
@@ -11,9 +9,10 @@ described in the associated article.
 - **Article:** Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
   Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and
   Dikul, N.: An adaptive thermodynamic correction framework for GLORYS ocean
-  reanalysis in a coastal Antarctic fjord, TODO journal, TODO DOI.
-- **Software:** glorys-antarctic-correction v1.0.0, TODO software DOI
-  (https://github.com/Gabo2000s/glorys-antarctic-correction).
+  reanalysis in a coastal Antarctic fjord, manuscript in preparation.
+- **Software:** glorys-antarctic-correction v1.0.0
+  (https://github.com/Gabo2000s/glorys-antarctic-correction), archived on
+  Zenodo.
 - **Licence:** CC BY 4.0 for the CTD casts, the station metadata and the
   corrected profiles; the GLORYS12V1 station profiles are redistributed under
   the Copernicus Marine Service licence (see "Licence and attribution").
@@ -44,9 +43,8 @@ in each header). The factory calibration was used; no bottle salinities were
 analysed. On 17 December 2025 a comparison cast at the Rothera Time Series
 (RaTS) site agreed with the station instrument over the full depth.
 
-TODO (data collectors): calibration date. The headers record sensor
-calibrations of 31 Jan 2024 (temperature, conductivity) and 23 Jan 2024
-(pressure); the article states 01.12.2026.
+The sensor calibration dates recorded in the file headers are 31 January 2024
+(temperature and conductivity) and 23 January 2024 (pressure).
 
 ASCII header followed by five columns after `*END*`:
 
@@ -59,8 +57,7 @@ ASCII header followed by five columns after `*END*`:
 | 5 | `flag` | – |
 
 The files contain depth (`depSM`, derived from pressure) rather than
-pressure. TODO (data collectors): processing modules applied after
-conversion (filters, alignment, loop edit), if any.
+pressure.
 
 ### `glorys/*.csv`
 

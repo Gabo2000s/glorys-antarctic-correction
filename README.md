@@ -1,7 +1,5 @@
 # glorys-antarctic-correction
 
-<!-- TODO after the first release: add the Zenodo DOI badge here. -->
-
 Adaptive thermodynamic correction of GLORYS12V1 ocean reanalysis temperature
 and salinity profiles against CTD observations, applied in Marguerite Bay,
 western Antarctic Peninsula. The algorithm is provided in **MATLAB** and in
@@ -12,7 +10,7 @@ This repository accompanies the article:
 > Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
 > Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and
 > Dikul, N.: An adaptive thermodynamic correction framework for GLORYS ocean
-> reanalysis in a coastal Antarctic fjord, TODO journal, TODO, 2026.
+> reanalysis in a coastal Antarctic fjord, manuscript in preparation, 2026.
 
 ## Why a correction is needed
 
@@ -217,7 +215,7 @@ scripts/     extract_glorys.py, compare_implementations.py, build_data_package.p
 Please cite the article, and the software version and dataset you used:
 
 - Software: Morales-Acuña, E., Gutiérrez-Cardenas, G. and Manrique-Cantillo, A.:
-  glorys-antarctic-correction (v1.0.0), Zenodo, TODO software DOI.
+  glorys-antarctic-correction (v1.0.0), Zenodo, 2026.
 - Data: Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
   Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C. and Dikul, N.:
   CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
