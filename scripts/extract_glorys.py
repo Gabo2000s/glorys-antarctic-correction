@@ -2,7 +2,6 @@
 
     python scripts/extract_glorys.py GLORYS.nc                 # writes outputs/glorys_extraction/
     python scripts/extract_glorys.py GLORYS.nc --compare       # and checks against data/raw/glorys
-    python scripts/extract_glorys.py GLORYS.nc --positions table1 --out outputs/glorys_table1
 
 Reproduces ``data/raw/glorys/GLORYS_Raw_Station_0XX.csv`` from a regional
 GLORYS12V1 NetCDF file with daily mean ``thetao`` and ``so`` (the file used for
@@ -18,12 +17,8 @@ Method, for each station and each depth level:
    for potential temperature ``thetao`` (temp_*) and practical salinity ``so``
    (salt_*).
 
-Station positions and dates (``--positions``), read from ``data/stations.csv``:
-
-* ``confirmed`` (default): the confirmed station positions and UTC dates
-  (``lat``, ``lon``, ``date``), used for the published files;
-* ``table1``: the values printed in Table 1 of the August 2026 manuscript
-  (``table1_*``), which differ for S1 and S4; kept only for comparison.
+Station positions and UTC dates are read from ``data/stations.csv`` (``lat``,
+``lon``, ``date``).
 
 Requires numpy, pandas, xarray and netCDF4 (``pip install -e "python[extract]"``).
 """
@@ -48,17 +43,11 @@ COLUMNS = ["depth", "temp_mean", "temp_median", "temp_std",
 COMPARE_ATOL = 1e-8
 
 
-def station_targets(positions: str) -> pd.DataFrame:
+def station_targets() -> pd.DataFrame:
     """Station identifiers, positions (decimal degrees) and dates (YYYY-MM-DD)."""
     s = pd.read_csv(STATIONS)
-    if positions == "confirmed":
-        lat, lon, day = s.lat, s.lon, s.date
-    elif positions == "table1":
-        lat, lon, day = s.table1_lat, s.table1_lon, s.table1_date
-    else:
-        raise ValueError(positions)
     return pd.DataFrame({"station": s.station, "file_id": s.cast.str[-3:],
-                         "lat": lat, "lon": lon, "day": day})
+                         "lat": s.lat, "lon": s.lon, "day": s.date})
 
 
 def extract_station(ds, lat: float, lon: float, day: str):
@@ -115,7 +104,6 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("netcdf", type=Path, help="regional GLORYS12V1 file with thetao and so")
     ap.add_argument("--out", type=Path, default=ROOT / "outputs" / "glorys_extraction")
-    ap.add_argument("--positions", choices=("confirmed", "table1"), default="confirmed")
     ap.add_argument("--compare", action="store_true",
                     help="compare with the published files in data/raw/glorys")
     args = ap.parse_args(argv)
@@ -127,7 +115,7 @@ def main(argv=None) -> int:
     args.out.mkdir(parents=True, exist_ok=True)
 
     log, failed = [], False
-    for _, st in station_targets(args.positions).iterrows():
+    for _, st in station_targets().iterrows():
         table, cells = extract_station(ds, st.lat, st.lon, st.day)
         name = f"GLORYS_Raw_Station_{st.file_id}.csv"
         table.to_csv(args.out / name, index=False, lineterminator="\n")

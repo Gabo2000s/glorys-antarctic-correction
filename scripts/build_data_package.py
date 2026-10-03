@@ -7,7 +7,7 @@ The package contains:
 * ``ctd/``        the six Sea-Bird .cnv files, byte for byte as in data/raw
 * ``glorys/``     the six GLORYS12V1 station extracts, byte for byte
 * ``corrected/``  the corrected profiles, byte for byte as in results/profiles
-* ``stations.csv`` confirmed station metadata (and Table 1 values for reference)
+* ``stations.csv`` station metadata (dates, positions, cast and water depths)
 * ``README.md``   dataset description (copied from data/DATASET_README.md)
 * ``MD5SUMS.txt`` and ``SHA256SUMS.txt``
 

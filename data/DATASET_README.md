@@ -87,8 +87,7 @@ repository:
 4. **Statistics:** mean, median and standard deviation (population, ddof = 0)
    over the 4 cells at each level. The correction uses the medians.
 
-Positions and dates are the confirmed station positions and dates (`lat`,
-`lon`, `date` in `stations.csv`).
+Positions and dates are those of `stations.csv` (`lat`, `lon`, `date`).
 
 The extraction script regenerates the six files from the source NetCDF file:
 five are identical to the values stored here, and S1 differs by at most
@@ -130,28 +129,16 @@ GLORYS `thetao` is potential temperature and is converted with
 | Column | Units | Description |
 |---|---|---|
 | `station`, `cast`, `figure_label` | – | S1–S6, CTD file name, label in the figures |
-| `date`, `time_utc` | – | Confirmed date and UTC time of the cast |
-| `lat`, `lon` | ° | Confirmed position (signed decimal degrees, south and west negative) |
+| `date`, `time_utc` | – | Date and UTC time of the cast |
+| `lat`, `lon` | ° | Position (signed decimal degrees, south and west negative) |
 | `max_cast_depth_m` | m | Deepest sample of the cast (`depSM` in the `.cnv` file) |
-| `table1_*` | – | Date, position and depths printed in Table 1 of the August 2026 manuscript, for reference |
+| `water_depth_m` | m | Water depth at the station |
+| `water_depth_source` | – | `reported` (station records), or `estimated: max_cast_depth_m + 20 m` where no water depth was recorded (S1); the casts stopped about 20 m above the seabed |
 
-The confirmed positions and dates are those recorded in the `.cnv` headers;
-the correction and the GLORYS extraction use them. Stations are numbered by
-cast file (NF003_008 … 014), not chronologically: S2 (11 Dec), S3 (12 Dec),
+Positions, dates and times are those recorded in the `.cnv` headers; the
+correction and the GLORYS extraction use them. Stations are numbered by cast
+file (NF003_008 … 014), not chronologically: S2 (11 Dec), S3 (12 Dec),
 S4 (14 Dec), S5, S6 and S1 (15 Dec).
-
-The manuscript's Table 1 differs from the confirmed values:
-
-1. **S1 (NF003_008):** confirmed 15 Dec 2025, 68°09.73′ S, 69°32.12′ W;
-   Table 1 gives 11 Dec 2025 at a position 572 m away. The source file is
-   `NF003_008_a.hex`, and the cast reaches 624.6 m, deeper than both depths
-   in Table 1 (590 m and 603 m).
-2. **S4 (NF003_012):** confirmed 14 Dec 2025; Table 1 gives 15 Dec.
-3. **Depth columns:** 'Max. cast depth' exceeds 'Water depth' at every
-   station, although the casts stopped about 20 m above the seabed; the
-   'Water depth' column matches the deepest sample of S2–S6 (within 8 m). The
-   two columns appear to be swapped. TODO: water depth at each station,
-   including the confirmed S1 position.
 
 ## Known limitations of the corrected profiles
 
@@ -180,6 +167,13 @@ same results. The corrected profiles were produced with the software version
 cited above and reproduce the metrics table of the article to within its
 two-decimal rounding.
 
+## Funding
+
+This work was funded by the Programa Antártico Colombiano (Comisión
+Colombiana del Océano, Colombia), the Instituto Politécnico Nacional
+(Mexico) and the State Institution National Antarctic Scientific Center of
+the Ministry of Education and Science of Ukraine (Kyiv, Ukraine).
+
 ## Licence and attribution
 
 | Files | Licence | Attribution |
@@ -198,4 +192,11 @@ https://doi.org/10.48670/moi-00021 (Accessed on 14 February 2026).
 
 ## How to cite
 
-TODO: dataset citation with the DOI assigned by Zenodo.
+Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
+Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C., and Dikul, N.:
+CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
+Marguerite Bay, Antarctic Peninsula, December 2025 (v1.0.0), Zenodo [data set],
+https://doi.org/10.5281/zenodo.23112579, 2026.
+
+Please also cite the associated article and, for the GLORYS12V1 profiles, the
+Copernicus Marine product above.

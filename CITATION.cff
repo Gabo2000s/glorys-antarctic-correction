@@ -52,6 +52,29 @@ keywords:
   - Antarctic Peninsula
 references:
   - type: data
+    title: >-
+      CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
+      Marguerite Bay, Antarctic Peninsula, December 2025
+    authors:
+      - family-names: Morales-Acuña
+        given-names: Enrique
+      - family-names: Linero-Cueto
+        given-names: J.
+      - family-names: Manrique-Cantillo
+        given-names: Andrea
+      - family-names: Gutiérrez-Cardenas
+        given-names: Gabriel
+      - family-names: Escobedo-Urías
+        given-names: D.
+      - family-names: Olarte-García
+        given-names: C.
+      - family-names: Dikul
+        given-names: N.
+    doi: 10.5281/zenodo.23112579
+    version: 1.0.0
+    publisher:
+      name: Zenodo
+  - type: data
     title: Global Ocean Physics Reanalysis (GLORYS12V1)
     authors:
       - name: E.U. Copernicus Marine Service

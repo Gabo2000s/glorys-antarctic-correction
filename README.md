@@ -186,7 +186,7 @@ Columns and formats: [`docs/outputs.md`](docs/outputs.md).
 
 [`data/raw/`](data/raw/) contains the inputs: six Sea-Bird CTD casts and the
 GLORYS12V1 profiles at each station. The citable copy of the data, together
-with the corrected profiles, is archived on Zenodo (TODO dataset DOI); see
+with the corrected profiles, is archived on Zenodo (https://doi.org/10.5281/zenodo.23112579); see
 [`data/DATASET_README.md`](data/DATASET_README.md) for variables, units,
 provenance and licences.
 
@@ -218,7 +218,11 @@ Please cite the article, and the software version and dataset you used:
 
 - Software: Morales-Acuña, E., Gutiérrez-Cardenas, G. and Manrique-Cantillo, A.:
   glorys-antarctic-correction (v1.0.0), Zenodo, TODO software DOI.
-- Data: TODO, Zenodo, TODO dataset DOI.
+- Data: Morales-Acuña, E., Linero-Cueto, J., Manrique-Cantillo, A.,
+  Gutiérrez-Cardenas, G., Escobedo-Urías, D., Olarte-García, C. and Dikul, N.:
+  CTD casts and corrected GLORYS12V1 temperature and salinity profiles,
+  Marguerite Bay, Antarctic Peninsula, December 2025 (v1.0.0), Zenodo,
+  https://doi.org/10.5281/zenodo.23112579.
 
 GitHub's *Cite this repository* button uses [`CITATION.cff`](CITATION.cff).
 
@@ -241,7 +245,12 @@ Details: [`data/DATASET_README.md`](data/DATASET_README.md).
 This study has been conducted using E.U. Copernicus Marine Service
 Information; https://doi.org/10.48670/moi-00021. CTD data were collected
 during the 30th Ukrainian Antarctic Expedition (National Antarctic Scientific
-Center of Ukraine). TODO: funding.
+Center of Ukraine).
+
+This work was funded by the Programa Antártico Colombiano (Comisión
+Colombiana del Océano, Colombia), the Instituto Politécnico Nacional
+(Mexico) and the State Institution National Antarctic Scientific Center of
+the Ministry of Education and Science of Ukraine (Kyiv, Ukraine).
 
 ## References
 
